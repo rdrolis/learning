@@ -1,7 +1,7 @@
 # Learning Python
 Just a simple repository while I learn to write python from multiple computers.
 
-Test: Python Crash Course 2nd Edition
+Text: Python Crash Course 2nd Edition
 
 Chapter 1. The Basics
 Chapter 2. Variables and Simple Data Types
