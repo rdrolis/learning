@@ -43,6 +43,7 @@ print(1+7)
 print(10-2)
 print(9-1)
 print(4+4)
+print()
 #Exercise 2-9
 favorite_num = 1
 print(f"My favorite number is {favorite_num}.")
