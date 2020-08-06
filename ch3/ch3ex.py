@@ -43,6 +43,7 @@ print(f"{guest[2].title()} you are invited to dinner at my house tomorrow evenin
 guest.insert(0, 'amber lynn')
 guest.insert(2, 'marilyn chambers')
 guest.append('nina hartley')
+print(guest)
 print(f"\n{guest[0].title()} you are invited to dinner at my house tomorrow evening.")
 print(f"{guest[1].title()} you are invited to dinner at my house tomorrow evening.")
 print(f"{guest[2].title()} you are invited to dinner at my house tomorrow evening.")
@@ -65,4 +66,46 @@ print(f"{guest_notify.title()} our dinner plans for tomorrow have been finalized
 del guest[0]
 del guest[0]
 print(guest)
-
+print()
+#Exercise 3-8 Seeing the World
+places = ['vatican city', 'reagan library', 'grand canyon', 'taj mahal']
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse=True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+print()
+#Exercise 3-9 Dinner Guests
+guests = ['amber lynn', 'george patton', 'marilyn chambers', 'christy canyon', 'ava devine', 'nina hartley']
+print(len(guests))
+print(f"I have invited {len(guests)} guests for dinner tomorrow.")
+print()
+#Exercise 3-10 Every Function
+states = ['oklahoma', 'iowa', 'texas' ]
+print(states)
+print(states[2].title())
+print(states[0].title())
+print(states[1].title())
+message = f"I am from {states[-1].title()}."
+print(message)
+message = f"\nMy Mom was from {states[0].title()}."
+print(message)
+message = f"\n\tMy friend {names[2].title()} lives in {states[1].title()}."
+print(message)
+states.append('mississippi')
+print(states)
+states.insert(1, 'louisiana')
+print(states)
+print(states[3].title())
+print(states[-1].title())
+print(states[1].title())
+print(states[0].title())
+print(states[2].title())
+states.pop(2)
+print(states)
+del states[3]
+print(states)
