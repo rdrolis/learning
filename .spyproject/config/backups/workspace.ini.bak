@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['ch3/ch3ex.py']
+recent_files = ['ch3/ch3ex.py', 'ch3/motorcycles.py']
 
