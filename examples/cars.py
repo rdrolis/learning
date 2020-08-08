@@ -14,3 +14,10 @@ print("\nHere is the orginal list again:")
 print(cars)
 cars.reverse()
 print(cars)
+print()
+#Chapter 5 example
+for c in cars:
+    if c == 'bmw':
+        print(c.upper())
+    else:
+        print(c.title())
