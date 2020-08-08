@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['ch4/ch4ex.py', 'ch4/players.py', 'ch4/foods.py']
+recent_files = ['ch4/ch4ex.py', 'ch4/players.py', 'ch4/foods.py', 'ch3/ch3ex.py', 'ch4/dimensions.py']
 
