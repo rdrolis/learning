@@ -5,12 +5,8 @@ Created on Fri Aug  7 10:05:06 2020
 
 @author: rdrolis
 """
-mf =['chili','steak','bbq']
+mf = ['chili','steak','bbq']
 ff = mf[:]
-print("\nMy favorite foods are:")
-print(mf)
-print("\nMy friend's favorite foods are:")
-print(ff)
 mf.append('ice cream')
 ff.append('meat loaf')
 print("\nMy favorite foods are:")

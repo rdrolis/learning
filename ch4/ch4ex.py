@@ -42,4 +42,39 @@ print()
 #Exercise 4-9 Cubes List Comprehension
 cu = [c**3 for c in range(1,11)]
 print(cu)
-
+#Exercise 4-10 Slices
+pizzas.append('spinach')
+print("\nThe first three items in the list are:")
+print(pizzas[:3])
+print("\nThe second three items in the list are:")
+print(pizzas[1:4])
+print("\nThe last three items in the list are:")
+print(pizzas[2:5])
+#Exercise 4-11 
+pz = pizzas[:]
+fp = pizzas[:]
+pz.append('dessert')
+fp.append('alfredo')
+print(pz)
+print(fp)
+#Exercise 4-12 More Loops
+mf = ['chili','steak','bbq']
+ff = mf[:]
+mf.append('ice cream')
+ff.append('meat loaf')
+print("\nMy favorite foods are:")
+for m in mf:
+    print(m.title())
+print("\nMy friend's favorite foods are:")
+for f in ff:
+    print(f.title())
+print()
+#Exercise 4-13 Buffet
+menu = ('meat loaf', 'prime rib', 'fried chicken', 'green beans', 'potatoes')
+for m in menu:
+    print(m)
+#menu[1] = 'catfish'
+menu = ('catfish', 'prime rib', 'hushpuppies', 'green beans', 'potatoes')
+print()
+for m in menu:
+    print(m)
