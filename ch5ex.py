@@ -102,4 +102,26 @@ if w not in wx:
     print(f"\n{w.title()} has been added to the list")
     print(wx)
 else:
-    print(f"\n{w.title()} is already in the list.")
+    print(f"\n{w.title()} is  'already in the list.")
+#Exercise 5-3 Alien Colors #1
+al_c = 'green'
+if al_c =='green':
+    print("\nYou just scored 5 points.")
+al_c = 'orange'
+if al_c =='green':
+    print("\nYou just scored 5 points.")
+#Exercise 5-4 Alien Colors #2
+al_c = 'green'
+if al_c =='green':
+    print("\nYou just scored 5 points.")
+if al_c != 'green':
+    print("\nYou just scored 10 points.")
+al_c = 'green'
+if al_c =='green':
+    print("\nYou just scored 5 points.")
+if al_c != 'green':
+    print("\nYou just scored 10 points.")
+
+
+
+    
