@@ -60,3 +60,46 @@ if a_0 == 30 or a_1 == 30:
 else:
     print("false")
     
+#Exercise 5-2 More Conditional Tests
+wx = 'rainy'
+if wx.lower() != 'hot':
+    wx = 'not hot'
+    print(f"\nThe weather is {wx.lower()}.")
+else:
+    print("\nThe weather is too hot.")
+
+n1 = 50
+if n1 == 50:
+    print("\nThe number is 50.")
+else:
+    if n1 != 50:
+        print("\nThe number is not 50.")
+
+wx = ['hot', 'rainy', 'cold']
+w = 'snow'
+if w not in wx:
+    wx.append(w.lower())
+    print(f"\n{w.title()} has been added to the list")
+    print(wx)
+else:
+    print(f"\n{w.title()} is already in the list.")
+if w not in wx:
+    wx.append(w.lower())
+    print(f"\n{w.title()} has been added to the list")
+    print(wx)
+else:
+    print(f"\n{w.title()} is already in the list.")    
+w = 'stormy'
+if w not in wx:
+    wx.append(w.lower())
+    print(f"\n{w.title()} has been added to the list")
+    print(wx)
+else:
+    print(f"\n{w.title()} is already in the list.") 
+w = 'cold'
+if w not in wx:
+    wx.append(w.lower())
+    print(f"\n{w.title()} has been added to the list")
+    print(wx)
+else:
+    print(f"\n{w.title()} is already in the list.")
