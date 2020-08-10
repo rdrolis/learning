@@ -103,6 +103,7 @@ if w not in wx:
     print(wx)
 else:
     print(f"\n{w.title()} is  'already in the list.")
+
 #Exercise 5-3 Alien Colors #1
 al_c = 'green'
 if al_c =='green':
@@ -110,18 +111,67 @@ if al_c =='green':
 al_c = 'orange'
 if al_c =='green':
     print("\nYou just scored 5 points.")
+
 #Exercise 5-4 Alien Colors #2
 al_c = 'green'
 if al_c =='green':
     print("\nYou just scored 5 points.")
 if al_c != 'green':
     print("\nYou just scored 10 points.")
-al_c = 'green'
+al_c = 'red'
 if al_c =='green':
     print("\nYou just scored 5 points.")
 if al_c != 'green':
     print("\nYou just scored 10 points.")
 
+#Exercise 5-5 Alien Colors #3
+al_c = 'green'
+if al_c == 'green':
+    sc = 5
+if al_c == 'yellow':
+    sc = 10
+if al_c == 'red':
+    sc = 15
+print(f"\nYou scored {sc} points.")
 
+al_c = 'yellow'
+if al_c == 'green':
+    sc = 5
+if al_c == 'yellow':
+    sc = 10
+if al_c == 'red':
+    sc = 15
+print(f"\nYou scored {sc} points.")
 
-    
+al_c = 'red'
+if al_c == 'green':
+    sc = 5
+if al_c == 'yellow':
+    sc = 10
+if al_c == 'red':
+    sc = 15
+print(f"\nYou scored {sc} points.")
+
+#Exercise 5-6 Stages of life
+a = 2
+if a < 2:
+    st = 'a baby'
+elif a >= 2 and a < 4:
+    st = 'a toddler'
+elif a >= 4 and a < 13:
+    st = 'a kid'
+elif a >= 13 and a < 20:
+    st = 'a teenager'
+elif a >= 20 and a < 65:
+    st = 'an adult'
+elif a > 65:
+    st = 'a senior citizen'
+print(f"\nThat person is {st}.")
+
+#Exercise 5-7 Favorite Fruits
+f = 'apples'
+ff = ['peaches', 'watermelon', 'oranges']
+if f in ff:
+    print(f"\nYou really like {f}.")
+else:
+    print(f"\nI guess you don't like {f} that much.")
