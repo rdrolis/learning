@@ -174,4 +174,48 @@ ff = ['peaches', 'watermelon', 'oranges']
 if f in ff:
     print(f"\nYou really like {f}.")
 else:
-    print(f"\nI guess you don't like {f} that much.")
+    print(f"\nI guess you don't like {f} that much.\n")
+#Exercise 5-8 Hello Admin
+users = ['robert', 'jessica', 'admin', 'amy']
+if users:
+    for u in users:
+        if u == 'admin':
+            print(f"Hello, {u}, would you like to see a report?")
+        else:
+            print(f"Hello {u.title()}, welcome to the system.")
+print() 
+        
+#Exercise 5-9 No Users
+users = []
+if users:
+    for u in users:
+        if u == 'admin':
+            print(f"Hello, {u}, would you like to see a report?")
+        else:
+            print(f"Hello {u.title()}, welcome to the system.")
+else:
+    print("user list is empty\n")
+
+#Exercise 5-10 Checking Usernames
+cusers = ['robert', 'jessica', 'james', 'amy', 'starr']
+nusers = ['amy', 'troy', 'keith', 'james', 'billy']
+for n in nusers:
+    if n in cusers:
+        print(f"Username {n.title()} is not available.")
+    else:
+        print(f"Username {n.title()} is available.")
+print()       
+#Exercise 5-11 Ordinal Numbers
+num = range(1, 10)
+if num:
+    for n in num:
+        if n == 1:
+            print(f"{n}st")
+        elif n == 2:
+            print(f"{n}nd")
+        elif n == 3:
+            print(f"{n}rd")
+        else:
+            print(f"{n}th")
+else:
+    print("End of list.")
