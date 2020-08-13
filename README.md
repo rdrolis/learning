@@ -6,7 +6,12 @@ Text: Python Crash Course 2nd Edition
 Chapter 1. The Basics
 
 Chapter 2. Variables and Simple Data Types
+
 Chapter 3. Introducing Lists
+
 Chapter 4. Working with Lists
+
 Chapter 5. Conditional Statements
+
 Chapter 6. Dictionaries
+
