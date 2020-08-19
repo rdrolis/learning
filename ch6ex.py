@@ -56,4 +56,4 @@ print(f"Integer: {term}")
 term = gloss['float']
 print(f"Float: {term}")
 term = gloss['conditional statement']
-print(f"COnditional Statement: {term}")
+print(f"Conditional Statement: {term}")
