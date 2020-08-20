@@ -43,3 +43,14 @@ print()
 #Loop through dictionary for unique values and print them
 for l in set(favorite_languages.values()):
     print(l.title())
+#List within a dictionary
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': 'c',
+    'edward': ['ruby', 'go'],
+    'phil': ['javascript', 'haskell'],
+    }
+for n, l in favorite_languages.items():
+    print(f"\n{n.title()}'s favorite languages are:")
+    for la in l:
+        print(f"\t{la.title()}")

@@ -52,3 +52,14 @@ for r in r_top:
     else:
         print(f"Sorry, we don't have {r}.")
 print("Your pizza is ready.\n")
+print()
+#Pizza order
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+    }
+#Summarize order
+print(f"You ordered a {pizza['crust']}-crust pizza \
+with the following toppings:")
+for t in pizza['toppings']:
+    print(t)
