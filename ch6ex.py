@@ -46,9 +46,10 @@ gloss = {
     'float': 'A number containing one or more decimal places.',
     'conditional statement': 'A statement that defines conditions to be met \
 before executing a task',
+    'dictionary': 'A list of data containing keys and corresponding values.',
+    'key': 'A pointer in a dictionary to a value.',
+    'value': 'Data that defines a key in a dictionary.',
     }
-term = gloss['list']
-print(f"List: {term}")
 term = gloss['variable']
 print(f"Variable: {term}")
 term = gloss['integer']
@@ -57,3 +58,40 @@ term = gloss['float']
 print(f"Float: {term}")
 term = gloss['conditional statement']
 print(f"Conditional Statement: {term}")
+print()
+#Exercise 6-4 Glossary 2
+for g, v in gloss.items():
+    print(f"{g.title()}: {v}")
+print()
+#Exercise 6-5 Rivers
+rivers = {
+    'han': 'south korea',
+    'mississippi': 'united states',
+    'rhein': 'germany',
+    }
+for r, c in rivers.items():
+    print(f"The {r.title()} river is located in {c.title()}.")
+print()
+for r in rivers.keys():
+    print(r.title())
+print()
+for c in rivers.values():
+    print(c.title())
+#Exercise 6-6 Polling
+
+fav_lang = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'javascript',
+    'david': 'ruby',
+    'jeff': 'groovy'
+    }
+poll = ['tim', 'mary', 'edward', 'carena', 'larry', 'jen']
+for n in poll:
+    if n in fav_lang.keys():
+        print(f"{n.title()} thank you for taking our poll.")
+    elif n not in fav_lang.keys():
+        print(f"{n.title()}, please take our favorite languages poll.")
+
+    
