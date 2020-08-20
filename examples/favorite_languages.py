@@ -12,6 +12,7 @@ favorite_languages = {
     'edward': 'ruby',
     'phil': 'javascript',
     'david': 'ruby',
+    'jeff': 'groovy'
     }
 lang = favorite_languages['sarah'].title()
 print(f"Sarah's favorite language is {lang}.\n")
@@ -35,3 +36,10 @@ print()
 for n in sorted(favorite_languages.keys()):
     print(f"{n.title()}, thank you for taking our poll.")
 #Loop through dictionary values
+print("\nThe following lnguages have been mentioned:")
+for l in favorite_languages.values():
+    print(l.title())
+print()
+#Loop through dictionary for unique values and print them
+for l in set(favorite_languages.values()):
+    print(l.title())
