@@ -10,7 +10,28 @@ favorite_languages = {
     'jen': 'python',
     'sarah': 'c',
     'edward': 'ruby',
-    'phil': 'python',
+    'phil': 'javascript',
+    'david': 'ruby',
     }
 lang = favorite_languages['sarah'].title()
-print(f"Sarah's favorite language is {lang}.")
+print(f"Sarah's favorite language is {lang}.\n")
+#Looping through dictionary
+for n, l in favorite_languages.items():
+    print(f"{n.title()}'s favorite language is {l.title()}.")
+for n in favorite_languages.keys():
+    print(n.title())
+print()
+#using a list as a condition whill looping
+friends = ['phil', 'sarah']
+for n in favorite_languages.keys():
+    print(f"Hi {n.title()}.")
+    if n in friends:
+        l = favorite_languages[n].title()
+        print(f"\t {n.title()}, I see you like {l}")
+    if 'erin'not in favorite_languages.keys():
+        print("Erin, please take our poll.")
+print()
+#Sort dictionary keys before looping
+for n in sorted(favorite_languages.keys()):
+    print(f"{n.title()}, thank you for taking our poll.")
+#Loop through dictionary values
