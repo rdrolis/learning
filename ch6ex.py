@@ -93,5 +93,77 @@ for n in poll:
         print(f"{n.title()} thank you for taking our poll.")
     elif n not in fav_lang.keys():
         print(f"{n.title()}, please take our favorite languages poll.")
-
+print()
+#Exercise 6-7 People
+people = {
+    '1' : {
+        'last' : 'rolison',
+        'first' : 'daryl',
+        'location' : 'san antonio'
+        },
+    '2' : {
+        'last' : 'cazzell',
+        'first' : 'dawn',
+        'location' : 'noblesville'
+        },
+    '3' : {
+        'last' : 'large',
+        'first' : 'kelley',
+        'location' : 'missouri city'
+        },
+    '4' : {
+        'last' : 'green',
+        'first' : 'kimberly',
+        'location' : 'tomball',
+        },
+    '5' : {
+        'last' : 'cherry',
+        'first' : 'duane',
+        'location' : 'tomball'
+        },
+        }
+for i, p in people.items():
+    fn = f"{p['first']} {p['last']}"
+    l = f"{p['location']}"
+    print(f"Name: {fn.title()}")
+    print(f"\tLocation: {l.title()}")
+print()
+#Exercise 6-8 Pets
+pets = []
+p = {
+      'animal' : 'dog',
+      'name' : 'snoopy',
+      'age' : '3',
+      'breed' : 'beagle',
+      }
+pets.append(p)
+p = {
+      'animal' : 'cat',
+      'name' : 'garfield',
+      'age' : '40',
+      'breed' : 'calico'
+      }
+pets.append(p)
+p = {
+      'animal' : 'snake',
+      'name' : 'kaa',
+      'age' : '10',
+      'breed' : 'python',
+      }
+pets.append(p)
+for p in pets:
+    print(f"Heres is what I know about {p['name'].title()}:")
+    for k, v in p.items():
+        print(f"\t{k}: {v.title()}")
+print()
+#Exercise 6-9 Favorite Places
+favorite_places = {
+    'joe' : ['fort bend sp', 'college station', 'galveston'],
+    'yong' : ['cagle recreation area', 'grand canyon', 'niagra falls'],
+    'ryan' : ['frio river', 'port aransas', 'san marcos'],
+    }
+for n, pl in favorite_places.items():
+    print(f"{n.title()}'s favorite places are:")
+    for p in pl:
+        print(f"-{p.title()}")
     
