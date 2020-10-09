@@ -209,5 +209,6 @@ for c, ci in cities.items():
     print()
 print()
 #Exercise 6-12
+print()
     
     
