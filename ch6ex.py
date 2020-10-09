@@ -156,6 +156,7 @@ for p in pets:
     for k, v in p.items():
         print(f"\t{k}: {v.title()}")
 print()
+
 #Exercise 6-9 Favorite Places
 favorite_places = {
     'joe' : ['fort bend sp', 'college station', 'galveston'],
@@ -166,4 +167,47 @@ for n, pl in favorite_places.items():
     print(f"{n.title()}'s favorite places are:")
     for p in pl:
         print(f"-{p.title()}")
+#Exercise 6-10 More Favorite numbers
+fav_num= {
+    'joe': ['6', '23', '14'],
+    'dan': ['22', '17'],
+    'bob': ['5', '48', '10'],
+    'jessica': ['7', '3'],
+    'linda': ['4', '18', '3', '69'],
+    }
+for n, ns in fav_num.items():
+    print(f"{n.title()}'s favorite numbers are:")
+    for t in ns:
+        print(t)
+print()
+#Exercise 6-11 Cities
+cities = {
+    'houston' : {
+        'country' : 'united states',
+        'population' : '4 million',
+        'fact' : 'Home of NASA',
+        },
+    'budapest' : {
+        'country' : 'hungary',
+        'population' : '1.7 million',
+        'fact' : 'On the Danube River',
+        },
+    'seoul' : {
+        'country' : 'south korea',
+        'population' : '9.7 million',
+        'fact' : 'Many ancient palaces',
+        },
+    }
+for c, ci in cities.items():
+    print(f"City: {c.title()}")
+    p = ci['population']
+    f = ci['fact']
+    c = ci['country']
+    print(f"--Population: Home to {p} people.")
+    print(f"--Country: {c.title()}")
+    print(f"--Fact: {f}")
+    print()
+print()
+#Exercise 6-12
+    
     
