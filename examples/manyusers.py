@@ -7,20 +7,20 @@ Created on Fri Aug 21 07:53:53 2020
 """
 
 users = {
-    'aeinstein' : {
-        'first' : 'albert',
-        'last' : 'einstein',
-        'location' : 'princeton',
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
         },
-    'mcurie' : {
-        'first' : 'marie',
-        'last' : 'curie',
-        'location' : 'paris',
-        } 
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+        }
     }
 for u, ui in users.items():
     print(f"\nUsername: {u}")
     fn = f"{ui['first']} {ui['last']}"
-    l = ui['location']
+    lo = ui['location']
     print(f"\tFull name: {fn.title()}")
-    print(f"\tLocation: {l.title()}")
+    print(f"\tLocation: {lo.title()}")

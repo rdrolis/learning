@@ -9,4 +9,3 @@ squares = []
 for v in range(1, 15):
     squares.append(v ** 2)
 print(squares)
-    

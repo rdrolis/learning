@@ -20,7 +20,7 @@ elif 'extra cheese' in r_top:
     print("Adding extra cheese.")
 print("Finished making your pizza.")
 
-#Tests all conditions (if condition is not met, contiunes through routine)
+# Tests all conditions (if condition is not met, contiunes through routine)
 if 'mushrooms' in r_top:
     print("\nAdding mushrooms.")
 if 'pepperoni' in r_top:
@@ -29,7 +29,7 @@ if 'extra cheese' in r_top:
     print("Adding extra cheese.")
 print("Finished making your pizza.\n")
 # requested topping using for loop
-r_tops = ['sausage', 'mushrooms', 'pepperoni','green peppers', 'extra cheese']
+r_tops = ['sausage', 'mushrooms', 'pepperoni', 'green peppers', 'extra cheese']
 for rtop in r_tops:
     if rtop == 'green peppers':
         print("Sorry, green peppers are not available right now.")
@@ -43,7 +43,7 @@ for rtop in rtops:
 else:
     print("Are you sure you want a plain pizza?\n")
 
-#Making a pizza with multiple lists.
+# Making a pizza with multiple lists.
 a_top = ['sausage', 'pepperoni', 'mushrooms', 'green peppers', 'extra cheese']
 r_top = ['sausage', 'extra cheese', 'black olives', 'pepperoni']
 for r in r_top:
@@ -53,12 +53,12 @@ for r in r_top:
         print(f"Sorry, we don't have {r}.")
 print("Your pizza is ready.\n")
 print()
-#Pizza order
+# Pizza order
 pizza = {
     'crust': 'thick',
     'toppings': ['mushrooms', 'extra cheese'],
     }
-#Summarize order
+# Summarize order
 print(f"You ordered a {pizza['crust']}-crust pizza \
 with the following toppings:")
 for t in pizza['toppings']:

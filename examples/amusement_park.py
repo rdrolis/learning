@@ -18,8 +18,8 @@ if a < 4:
     price = 0
 elif a < 18:
     price = 25
-elif a <65:
+elif a < 65:
     price = 40
-elif a>= 65:
+elif a >= 65:
     price = 20
 print(f"\nYour ticket price is ${price}.")

@@ -5,7 +5,7 @@ Created on Fri Aug  7 10:05:06 2020
 
 @author: rdrolis
 """
-mf = ['chili','steak','bbq']
+mf = ['chili', 'steak', 'bbq']
 ff = mf[:]
 mf.append('ice cream')
 ff.append('meat loaf')
