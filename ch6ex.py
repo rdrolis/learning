@@ -167,6 +167,8 @@ for n, pl in favorite_places.items():
     print(f"{n.title()}'s favorite places are:")
     for p in pl:
         print(f"-{p.title()}")
+
+
 # Exercise 6-10 More Favorite numbers
 fav_num = {
     'joe': ['6', '23', '14'],
