@@ -17,39 +17,39 @@ favorite_languages = {
 lang = favorite_languages['sarah'].title()
 print(f"Sarah's favorite language is {lang}.\n")
 
-#Looping through dictionary
-for n, l in favorite_languages.items():
-    print(f"{n.title()}'s favorite language is {l.title()}.")
+# Looping through dictionary
+for n, la in favorite_languages.items():
+    print(f"{n.title()}'s favorite language is {la.title()}.")
 for n in favorite_languages.keys():
     print(n.title())
 print()
 
-#using a list as a condition while looping
+# using a list as a condition while looping
 friends = ['phil', 'sarah']
 for n in favorite_languages.keys():
     print(f"Hi {n.title()}.")
     if n in friends:
-        l = favorite_languages[n].title()
-        print(f"\t {n.title()}, I see you like {l}")
+        la = favorite_languages[n].title()
+        print(f"\t {n.title()}, I see you like {la}")
 if 'erin'not in favorite_languages.keys():
-        print("Erin, please take our poll.")
+    print("Erin, please take our poll.")
 print()
 
-#Sort dictionary keys before looping
+# Sort dictionary keys before looping
 for n in sorted(favorite_languages.keys()):
     print(f"{n.title()}, thank you for taking our poll.")
 
-#Loop through dictionary values
+# Loop through dictionary values
 print("\nThe following languages have been mentioned:")
-for l in favorite_languages.values():
-    print(l.title())
+for la in favorite_languages.values():
+    print(la.title())
 print()
 
-#Loop through dictionary for unique values and print them
-for l in set(favorite_languages.values()):
-    print(l.title())
-    
-#List within a dictionary
+# Loop through dictionary for unique values and print them
+for le in set(favorite_languages.values()):
+    print(le.title())
+
+# List within a dictionary
 favorite_languages = {
     'jen': ['python', 'ruby'],
     'sarah': 'c',
@@ -60,4 +60,4 @@ for n, l in favorite_languages.items():
     print(f"\n{n.title()}'s favorite languages are:")
     for la in l:
         print(f"\t{la.title()}")
-print("hello world")        
+print("hello world")

@@ -8,5 +8,5 @@ Created on Tue Aug  4 10:07:26 2020
 message = "Hello Python World"
 print(message)
 
-message="Hello Python Crash Course World."
+message = "Hello Python Crash Course World."
 print(message)

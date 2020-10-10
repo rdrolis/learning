@@ -28,13 +28,13 @@ elif al_0['speed'] == 'medium':
 else:
     # This must be a fast alien.
     x_increment = 3
-    
-#The new position is the old position plus the x increment
+
+# The new position is the old position plus the x increment
 al_0['x_pos'] = al_0['x_pos'] + x_increment
 print(f"New position: {al_0['x_pos']}")
 print(al_0)
 del al_0['points']
 print(al_0)
-#print(al_0['points'])
+# print(al_0['points'])
 point_value = al_0.get('points', 'No point value assigned.')
 print(point_value)

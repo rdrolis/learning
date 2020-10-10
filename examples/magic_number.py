@@ -7,5 +7,5 @@ Created on Sat Aug  8 12:45:52 2020
 """
 
 answer = 17
-if answer!= 42:
+if answer != 42:
     print("That is not the correct answer. Please try again!")
