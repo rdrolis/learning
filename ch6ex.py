@@ -6,8 +6,8 @@ Created on Tue Aug 11 20:58:36 2020
 @author: rdrolis
 """
 
-#Exercise 6-1 Person
-person={
+# Exercise 6-1 Person
+person = {
         'last_name': 'rolison',
         'first_name': 'daryl',
         'age': 46,
@@ -19,8 +19,8 @@ print(person['age'])
 print(person['city'].title())
 print()
 
-#Exercise 6-2 Favorite Numbers
-fav_num= {
+# Exercise 6-2 Favorite Numbers
+fav_num = {
     'joe': 6,
     'dan': 23,
     'bob': 5,
@@ -38,7 +38,7 @@ print(f"Jessica's favorite number is {num}.")
 num = fav_num['linda']
 print(f"Linda's favorite number is {num}.\n")
 
-#Exercise 6-3 Glossary
+# Exercise 6-3 Glossary
 gloss = {
     'list': 'A group of possible values for a variable.',
     'variable': 'An item to be defined by a string or an integer.',
@@ -59,11 +59,11 @@ print(f"Float: {term}")
 term = gloss['conditional statement']
 print(f"Conditional Statement: {term}")
 print()
-#Exercise 6-4 Glossary 2
+# Exercise 6-4 Glossary 2
 for g, v in gloss.items():
     print(f"{g.title()}: {v}")
 print()
-#Exercise 6-5 Rivers
+# Exercise 6-5 Rivers
 rivers = {
     'han': 'south korea',
     'mississippi': 'united states',
@@ -77,7 +77,7 @@ for r in rivers.keys():
 print()
 for c in rivers.values():
     print(c.title())
-#Exercise 6-6 Polling
+# Exercise 6-6 Polling
 
 fav_lang = {
     'jen': 'python',
@@ -94,61 +94,61 @@ for n in poll:
     elif n not in fav_lang.keys():
         print(f"{n.title()}, please take our favorite languages poll.")
 print()
-#Exercise 6-7 People
+# Exercise 6-7 People
 people = {
-    '1' : {
-        'last' : 'rolison',
-        'first' : 'daryl',
-        'location' : 'san antonio'
+    '1': {
+        'last': 'rolison',
+        'first': 'daryl',
+        'location': 'san antonio'
         },
-    '2' : {
-        'last' : 'cazzell',
-        'first' : 'dawn',
-        'location' : 'noblesville'
+    '2': {
+        'last': 'cazzell',
+        'first': 'dawn',
+        'location': 'noblesville'
         },
-    '3' : {
-        'last' : 'large',
-        'first' : 'kelley',
-        'location' : 'missouri city'
+    '3': {
+        'last': 'large',
+        'first': 'kelley',
+        'location': 'missouri city'
         },
-    '4' : {
-        'last' : 'green',
-        'first' : 'kimberly',
-        'location' : 'tomball',
+    '4': {
+        'last': 'green',
+        'first': 'kimberly',
+        'location': 'tomball',
         },
-    '5' : {
-        'last' : 'cherry',
-        'first' : 'duane',
-        'location' : 'tomball'
+    '5': {
+        'last': 'cherry',
+        'first': 'duane',
+        'location': 'tomball'
         },
         }
 for i, p in people.items():
     fn = f"{p['first']} {p['last']}"
-    l = f"{p['location']}"
+    c = f"{p['location']}"
     print(f"Name: {fn.title()}")
-    print(f"\tLocation: {l.title()}")
+    print(f"\tLocation: {c.title()}")
 print()
-#Exercise 6-8 Pets
+# Exercise 6-8 Pets
 pets = []
 p = {
-      'animal' : 'dog',
-      'name' : 'snoopy',
-      'age' : '3',
-      'breed' : 'beagle',
+      'animal': 'dog',
+      'name': 'snoopy',
+      'age': '3',
+      'breed': 'beagle',
       }
 pets.append(p)
 p = {
-      'animal' : 'cat',
-      'name' : 'garfield',
-      'age' : '40',
-      'breed' : 'calico'
+      'animal': 'cat',
+      'name': 'garfield',
+      'age': '40',
+      'breed': 'calico'
       }
 pets.append(p)
 p = {
-      'animal' : 'snake',
-      'name' : 'kaa',
-      'age' : '10',
-      'breed' : 'python',
+      'animal': 'snake',
+      'name': 'kaa',
+      'age': '10',
+      'breed': 'python',
       }
 pets.append(p)
 for p in pets:
@@ -156,14 +156,13 @@ for p in pets:
     for k, v in p.items():
         print(f"\t{k}: {v.title()}")
 print()
-#Exercise 6-9 Favorite Places
+# Exercise 6-9 Favorite Places
 favorite_places = {
-    'joe' : ['fort bend sp', 'college station', 'galveston'],
-    'yong' : ['cagle recreation area', 'grand canyon', 'niagra falls'],
-    'ryan' : ['frio river', 'port aransas', 'san marcos'],
+    'joe': ['fort bend sp', 'college station', 'galveston'],
+    'yong': ['cagle recreation area', 'grand canyon', 'niagra falls'],
+    'ryan': ['frio river', 'port aransas', 'san marcos'],
     }
 for n, pl in favorite_places.items():
     print(f"{n.title()}'s favorite places are:")
     for p in pl:
         print(f"-{p.title()}")
-    
