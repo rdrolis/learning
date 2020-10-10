@@ -208,4 +208,26 @@ for c, ci in cities.items():
     print(f"--Fact: {f}")
     print()
 print()
-# Exercise 6-12
+# Exercise 6-12 Extensions
+rv = {
+    'han': {
+        'country': 'south korea',
+        'length': '307',
+        'fact': 'runs through the city of Seoul.'
+        },
+    'mississippi': {
+        'country': 'united states',
+        'length': '2340',
+        'fact': 'has 41 bridge crossings.',
+        },
+    'rhein': {
+        'country': 'germany',
+        'length': '764',
+        'fact': 'traverses through 51 cities in Europe.',
+        },
+    }
+for r, ri in rv.items():
+    c = ri['country']
+    le = ri['length']
+    f = ri['fact']
+    print(f"The {r.title()} river is {le} miles long and {f}")
