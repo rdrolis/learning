@@ -14,7 +14,7 @@ g = input("How many guests are in your party? ")
 g = int(g)
 if g > 8:
     n = input("What is your first name? ")
-    print(f"{n.title()}, please wait while for an available table.")
+    print(f"{n.title()}, please wait for an available table.")
 else:
     print("Your table is ready.")
 # Exercise 7-3 Multples of Ten
