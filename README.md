@@ -15,3 +15,4 @@ Chapter 5. Conditional Statements
 
 Chapter 6. Dictionaries
 
+Chapter 7. User Input and While Loops
