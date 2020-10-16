@@ -24,3 +24,28 @@ if n % 10 == 0:
     print(f"The number {n} is a multiple of 10.")
 else:
     print(f"The number {n} is not a multiple of ten.")
+# Exercise 7-4 Pizza Toppings
+pr = "\nPlease enter your topping choices"
+pr += "\n When finished adding toppings, type 'quit': "
+t = ""
+act = True
+while act:
+    t = input(pr)
+    if t == "quit":
+        act = False
+    else:
+        print(f"Adding {t} to your pizza.")
+# Exercise 7-5 Movie Tickets
+pr = "\nWelcome to Kabuki Theater. Please enter the ages of guests."
+pr += "\nTo exit, type 'quit': "
+while True:
+    a = input(pr)
+    if a == 'quit':
+        break
+    a = int(a)
+    if a < 3:
+        print(" Your ticket is free.")
+    elif a < 13:
+        print(" Your ticket is $10.")
+    else:
+        print(" Your ticket is $15.")
