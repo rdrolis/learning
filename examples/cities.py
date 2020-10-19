@@ -14,4 +14,4 @@ while True:
     if c == 'quit':
         break
     else:
-        print(f"I would live to go to {c.title()}.")
+        print(f"I would love to go to {c.title()}.")
