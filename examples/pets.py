@@ -22,3 +22,20 @@ def dp(at, pn):
 
 dp('python', 'kaa')
 dp('dog', 'snoopy')
+# Wrong positional arguments
+dp('garfield', 'cat')
+
+# Keyword Arguments in a function
+dp(at='rabbit', pn='Bugs Bunny')
+
+# Default Value in function argument
+
+
+def dp(pn, at="dog"):
+    """Display information about a pet"""
+    print(f"\nI have a {at}.")
+    print(f"My {at}'s name is {pn.title()}.")
+
+
+dp('happy')
+dp(pn='tweety', at='canary')
