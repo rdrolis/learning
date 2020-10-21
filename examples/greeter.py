@@ -31,3 +31,23 @@ def gr_u(username):
 
 
 gr_u('george')
+
+
+def gfn(fi, ln):
+    """Return a full name, neatly formatted"""
+    fn = f"{fi} {ln}"
+    return fn.title()
+
+
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+    first = input("First name: ")
+    if first == 'q':
+        break
+    last = input("Last name: ")
+    if last == 'q':
+        break
+
+    form = gfn(first, last)
+    print(f"Hello, {form}!")
