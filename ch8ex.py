@@ -53,3 +53,58 @@ def dc(c, co='united states'):
 dc('houston')
 dc('nashville')
 dc('busan', 'south korea')
+
+# Exercise 8-6 Cities
+
+
+def cc(c, co):
+    """Return a city and country neatly formatted"""
+    cf = f"{c}, {co}"
+   print return cf.title()
+
+
+while True:
+    print("\nGive me the name of a city and its country")
+    print("enter 'q' at any time to quit:")
+    city = input("Name of city: ")
+    if city == 'q':
+        break
+    country = input("Country name: ")
+    if country == 'q':
+        break
+
+    form = cc(city, country)
+    print(form)
+
+# Exercise 8-7 Albums
+
+
+def make_album(t, a, s=None):
+    """Return a dictionary of album information"""
+    al = {'title': t, 'artist': a}
+    if s:
+        al['songs'] = s
+    return al
+
+
+album = make_album('van halen', 'van halen')
+print(album)
+album = make_album('ou812', 'van halen')
+print(album)
+album = make_album('land of make believe', 'chuck mangione', 12)
+print(album)
+
+# Exercise 8-8 User Albums
+
+while True:
+    print("\nEnter the name of an artist and album")
+    print("enter 'q' at any time to quit:")
+    art = input("Artist's name: ")
+    if art == 'q':
+        break
+    tit = input("Album title: ")
+    if tit == 'q':
+        break
+    album = make_album(tit, art)
+    print(album)
+  
