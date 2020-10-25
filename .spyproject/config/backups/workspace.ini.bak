@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['examples/greeter.py', 'ch8ex.py', 'examples/pets.py', 'examples/formatted_name.py', 'examples/person.py']
+recent_files = ['examples/greeter.py', 'ch8ex.py', 'examples/pets.py', 'examples/formatted_name.py', 'examples/person.py', 'examples/greet_user.py', 'examples/printing_models.py']
 
