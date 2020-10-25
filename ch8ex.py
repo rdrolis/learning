@@ -108,3 +108,60 @@ while True:
     album = make_album(tit, art)
     print(album)
   
+# Exercise 8-9 Messages
+
+
+def shm(ms):
+    """ Print a list of messages. """
+    for m in ms:
+        t = f"Here is your message: {m}."
+        print(t)
+
+
+texts = ['brb', 'ok', 'cu soon']
+shm(texts)
+
+# Exercise 8-10 Sending Messages
+
+def sm(t, st):
+    """Simulate sending each message """
+    while t:
+        m = t.pop()
+        print(f"Sending message: {m}")
+        st.append(m)
+
+
+def stm(st):
+    """ Show the sent messages """
+    print("The following text messages have been sent:")
+    for mt in st:
+        print(mt)
+
+texts = ['brb', 'ok', 'cu soon']
+sm(texts, st)
+print()
+stm(st)
+
+# Exercise 8-11 Archived Messages
+
+def sm(t, st):
+    """Simulate sending each message """
+    while t:
+        m = t.pop()
+        print(f"Sending message: {m}")
+        st.append(m)
+
+
+def stm(st):
+    """ Show the sent messages """
+    print("The following text messages have been sent:")
+    for mt in st:
+        print(mt)
+st = []
+texts = ['brb', 'ok', 'cu soon']
+sm(texts[:], st)
+print()
+stm(st)
+print()
+print(texts)
+print(st)
