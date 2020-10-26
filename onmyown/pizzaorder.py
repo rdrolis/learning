@@ -7,90 +7,117 @@ Created on Sun Oct 25 17:02:32 2020
 """
 
 # Write a pizza order taking program
-import time
 
+restart = True
 
-def mp(pizza, toppings):
-    sauce = pizza[3]
-    crust = pizza[2]
-    size = pizza[1]
-    cust = pizza[0]
-    print(f"\n{cust.title()}, you have ordered a {size} pizza with \
-{crust} crust and {sauce} sauce and the following toppings:\n")
-    for to in toppings:
-        print(f"-{to}")
+while restart:
+    toppings = []
+    pizza = []
+    import time
 
+    def mp(pizza, toppings):
+        sauce = pizza[3]
+        crust = pizza[2]
+        size = pizza[1]
+        cust = pizza[0]
+        print(f"\n{cust.title()}, you have ordered a {size} pizza with \
+              {crust} crust with {sauce} sauce and the following toppings:\n")
+        for to in toppings:
+            print(f"-{to}")
 
-pizza = []
-cr = ['pan', 'thick', 'thin']
-sa = ['tomato', 'pesto', 'alfredo']
-si = ['medium', 'large']
-toppings = []
+    c = input("Please give me your name for the order. \
+Type 'q' at anytime to quit: ")
+    if c == 'q':
+        raise Exception("Thank you. Please visit us again soon.")
+    else:
+        print(f"\nThank you {c.title()}. Please continue with your order: ")
 
-c = input("Please give me your name for the order. \
-           Type 'q' at anytime to quit: ")
-if c == 'q':
-    raise Exception("Thank you. Please visit us again soon.")
-else:
-    print(f"\nThank you {c.title()}. Please continue with your order: ")
-pizza.append(c)
-cu = pizza[0]
+    pizza.append(c)
+    cu = pizza[0]
+
 # Find out pizza size
 
-print("\nWhat size pizza would you like? You may choose from the following: ")
-for sz in si:
-    print(f"-{sz}")
-size = input("Size:  ")
-if size == 'q':
-    raise Exception(f"\nThank you {cu.title()}, please visit us again.")
-else:
-    print(f"You have chosen a {size} pizza. Please continue.")
-pizza.append(size)
+    si = ['medium', 'large']
+
+    print("\nWhat size pizza would you like? You may choose from the \
+following: ")
+    for sz in si:
+        print(f"-{sz}")
+    while True:
+        size = input("Size:  ")
+        if size == 'q':
+            raise Exception(f"\nThank you {cu.title()}, please visit us \
+again.")
+        elif size in si:
+            print(f"You have chosen a {size} pizza. Please continue.")
+            break
+        else:
+            print(f"We're sorry. {size.title()} pizzas are not available. \
+Please select from the available options.")
+
+    pizza.append(size)
 
 # Ask type of crust
 
-print("\nWhat type of crust would you like? \
+    cr = ['pan', 'thin', 'hand tossed']
+
+    print("\nWhat type of crust would you like? \
 You may choose from the following: ")
-for c in cr:
-    print(f"-{c}")
-crust = input("Crust: ")
-if crust == 'q':
-    raise Exception(f"\nThank you {cu.title()}, please visit us again.")
-else:
-    print(f"You have chosen a {crust} crust pizza. Please continue:")
-pizza.append(crust)
+    for c in cr:
+        print(f"-{c}")
+    while True:
+        crust = input("Crust: ")
+        if crust == 'q':
+            raise Exception(f"\nThank you {cu.title()}, please visit us again.\
+                            ")
+        elif crust in cr:
+            print(f"You have chosen a {crust} crust pizza. Please continue:")
+            break
+        else:
+            print(f"We're sorry. {crust.title()} crust is currently not \
+available. Please select from the available options.")
+    pizza.append(crust)
 
 # Type of sauce
+    sa = ['tomato', 'pesto', 'alfredo']
 
-print("\nWhat type of sauce would you like? \
+    print("\nWhat type of sauce would you like? \
 You may choose from the following: ")
-for s in sa:
-    print(f"-{s}")
-sauce = input("Sauce: ")
-if sauce == 'q':
-    raise Exception(f"\nThank you {cu.title()}, please visit us again.")
-else:
-    print(f"You have chosen {sauce} sauce. Please continue:")
-pizza.append(sauce)
+    for s in sa:
+        print(f"-{s}")
+    while True:
+        sauce = input("Sauce: ")
+        if sauce == 'q':
+            raise Exception(f"\nThank you {cu.title()}, please visit us again.\
+")
+        elif sauce in sa:
+            print(f"You have chosen {sauce} sauce. Please continue:")
+            break
+        else:
+            print(f"We're sorry. {sauce.title()} is currently not available. \
+Please select from the available options.")
+
+    pizza.append(sauce)
 
 # Get toppings
-active = True
-while active:
-    t = input("Please enter your toppings. Type 'q' when finished: ")
-    if t == 'q':
-        active = False
-    else:
-        toppings.append(t)
+    active = True
+    while active:
+        t = input("Please enter your toppings. Type 'q' when finished: ")
+        if t == 'q':
+            active = False
+        else:
+            toppings.append(t)
 # Summarize and print order
 
-print("\nPlease wait while we summarize your order...")
-time.sleep(5)
+    print("\nPlease wait while we summarize your order...")
+    time.sleep(3)
 
-mp(pizza[:], toppings)
+    mp(pizza[:], toppings)
 
-summ = input("Is your order correct? (y/n) ")
+    summ = input("Is your order correct? (y/n) ")
 
-if summ == 'n':
-    raise Exception(f"Thank you {cu.title()}, please reenter your order.")
-else:
-    print("\nThank you for your order. We will have it ready shortly.")
+    if summ == 'n':
+        print(f"Thank you {cu.title()}, please reenter your order.")
+    else:
+        print("\nThank you for your order. We will have it ready shortly.")
+        restart = False
