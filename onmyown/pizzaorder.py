@@ -8,12 +8,26 @@ Created on Sun Oct 25 17:02:32 2020
 
 # Write a pizza order taking program
 
+import time
+
 restart = True
+
+print("Welcome to Ray's Pizza Den. Please enter your order using our \
+automated system and we will be happy to serve you.")
+c = input("\nPlease give us your name for your order. \
+Type 'q' at anytime to quit: ")
+if c == 'q':
+    raise Exception("Thank you. Please visit us again soon.")
+else:
+    print(f"\nThank you {c.title()}. Please continue with your order: ")
 
 while restart:
     toppings = []
     pizza = []
-    import time
+    uatop = ['anchovy', 'anchovies', 'pineapple', 'artichoke hearts',
+             'artichoke heart']
+    sa = ['ragu', 'pesto', 'alfredo']
+    cr = ['pan', 'thin', 'hand tossed']
 
     def mp(pizza, toppings):
         sauce = pizza[3]
@@ -21,16 +35,9 @@ while restart:
         size = pizza[1]
         cust = pizza[0]
         print(f"\n{cust.title()}, you have ordered a {size} pizza with \
-              {crust} crust with {sauce} sauce and the following toppings:\n")
+{crust} crust and {sauce} sauce and the following toppings:\n")
         for to in toppings:
             print(f"-{to}")
-
-    c = input("Please give me your name for the order. \
-Type 'q' at anytime to quit: ")
-    if c == 'q':
-        raise Exception("Thank you. Please visit us again soon.")
-    else:
-        print(f"\nThank you {c.title()}. Please continue with your order: ")
 
     pizza.append(c)
     cu = pizza[0]
@@ -59,8 +66,6 @@ Please select from the available options.")
 
 # Ask type of crust
 
-    cr = ['pan', 'thin', 'hand tossed']
-
     print("\nWhat type of crust would you like? \
 You may choose from the following: ")
     for c in cr:
@@ -79,7 +84,6 @@ available. Please select from the available options.")
     pizza.append(crust)
 
 # Type of sauce
-    sa = ['tomato', 'pesto', 'alfredo']
 
     print("\nWhat type of sauce would you like? \
 You may choose from the following: ")
@@ -105,6 +109,8 @@ Please select from the available options.")
         t = input("Please enter your toppings. Type 'q' when finished: ")
         if t == 'q':
             active = False
+        elif t in uatop:
+            print(f"Oops. We are currently out of {t}.")
         else:
             toppings.append(t)
 # Summarize and print order
