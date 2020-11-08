@@ -102,15 +102,16 @@ You may choose from the following: ")
             print(f"You have chosen {sauce} sauce. Please continue:")
             break
         else:
-            print(f"We're sorry. {sauce} sauce is currently not available. \
-Please select from the available options.")
+            print(f"We're sorry. {sauce.title()} sauce is currently not \
+available. Please select from the available options.")
 
     pizza.append(sauce)
 
 # Get toppings
     active = True
     while active:
-        t = input("Please enter your toppings. Type 'q' when finished: ")
+        t = input("Please enter a topping and hit 'Enter'. Type 'q' when \
+finished: ")
         if t == 'q':
             active = False
         elif t in uatop:
@@ -129,6 +130,6 @@ Please select from the available options.")
     if summ == 'n':
         print(f"No problem {cu.title()}, please reenter your order.")
     else:
-        print("\nThank you {cu.title()} for your order. We will have it ready\
-shortly.")
+        print(f"\nThank you {cu.title()} for your order. We will have it ready\
+ shortly.")
         restart = False
