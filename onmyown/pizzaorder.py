@@ -9,15 +9,23 @@ Created on Sun Oct 25 17:02:32 2020
 # Write a pizza order taking program
 
 import time
+import sys
 
 restart = True
+
+
+def exit():
+    print(f"Thank you {cu.title()}, please visit is again soon.")
+    sys.exit()
+
 
 print("Welcome to Ray's Pizza Den. Please enter your order using our \
 automated system and we will be happy to serve you.")
 c = input("\nPlease give us your name for your order. \
 Type 'q' at anytime to quit: ")
 if c == 'q':
-    raise Exception("Thank you. Please visit us again soon.")
+    print("Thank you. Please visit us again soon.")
+    sys.exit()
 else:
     print(f"\nThank you {c.title()}. Please continue with your order: ")
 
@@ -53,8 +61,7 @@ following: ")
     while True:
         size = input("Size:  ")
         if size == 'q':
-            raise Exception(f"\nThank you {cu.title()}, please visit us \
-again.")
+            exit()
         elif size in si:
             print(f"You have chosen a {size} pizza. Please continue.")
             break
@@ -73,8 +80,7 @@ You may choose from the following: ")
     while True:
         crust = input("Crust: ")
         if crust == 'q':
-            raise Exception(f"\nThank you {cu.title()}, please visit us again.\
-                            ")
+            exit()
         elif crust in cr:
             print(f"You have chosen a {crust} crust pizza. Please continue:")
             break
@@ -92,13 +98,12 @@ You may choose from the following: ")
     while True:
         sauce = input("Sauce: ")
         if sauce == 'q':
-            raise Exception(f"\nThank you {cu.title()}, please visit us again.\
-")
+            exit()
         elif sauce in sa:
             print(f"You have chosen {sauce} sauce. Please continue:")
             break
         else:
-            print(f"We're sorry. {sauce.title()} is currently not available. \
+            print(f"We're sorry. {sauce} sauce is currently not available. \
 Please select from the available options.")
 
     pizza.append(sauce)
@@ -123,7 +128,8 @@ Please select from the available options.")
     summ = input("Is your order correct? (y/n) ")
 
     if summ == 'n':
-        print(f"Thank you {cu.title()}, please reenter your order.")
+        print(f"No problem {cu.title()}, please reenter your order.")
     else:
-        print("\nThank you for your order. We will have it ready shortly.")
+        print("\nThank you {cu.title()} for your order. We will have it ready\
+shortly.")
         restart = False
