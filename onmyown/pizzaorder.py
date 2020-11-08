@@ -21,13 +21,13 @@ def exit():
 
 print("Welcome to Ray's Pizza Den. Please enter your order using our \
 automated system and we will be happy to serve you.")
-c = input("\nPlease give us your name for your order. \
+cu = input("\nPlease give us your name for your order. \
 Type 'q' at anytime to quit: ")
-if c == 'q':
+if cu == 'q':
     print("Thank you. Please visit us again soon.")
     sys.exit()
 else:
-    print(f"\nThank you {c.title()}. Please continue with your order: ")
+    print(f"\nThank you {cu.title()}. Please continue with your order: ")
 
 while restart:
     toppings = []
@@ -47,8 +47,7 @@ while restart:
         for to in toppings:
             print(f"-{to}")
 
-    pizza.append(c)
-    cu = pizza[0]
+    pizza.append(cu)
 
 # Find out pizza size
 
@@ -75,8 +74,8 @@ Please select from the available options.")
 
     print("\nWhat type of crust would you like? \
 You may choose from the following: ")
-    for c in cr:
-        print(f"-{c}")
+    for r in cr:
+        print(f"-{r}")
     while True:
         crust = input("Crust: ")
         if crust == 'q':
