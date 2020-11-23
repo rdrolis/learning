@@ -165,3 +165,32 @@ stm(st)
 print()
 print(texts)
 print(st)
+
+# Exercise 8-12 Sandwiches
+
+def sand(*items):
+    """Summarize sandwich order"""
+    print(f"\nMaking a sandwich with the following ingredients:")
+    for i in items:
+        print(f"-{i}")
+        
+
+sand('mayonaise', 'roast beef', 'lettuce', 'tomato')
+sand('mustard', 'corned beef', 'swiss cheese')
+sand('russian dressing', 'pastrami', 'ham', 'lettuce', 'pickles')
+
+# Exercise 8-13 User Profile
+
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing every thing we know about a user"""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+
+user_profile = build_profile('raymond', 'rolison',
+                             age='54', car='ford',
+                             hometown='houston')
+print(user_profile)
+
+
