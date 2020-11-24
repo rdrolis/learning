@@ -60,7 +60,7 @@ dc('busan', 'south korea')
 def cc(c, co):
     """Return a city and country neatly formatted"""
     cf = f"{c}, {co}"
-   print return cf.title()
+    return cf.title()
 
 
 while True:
@@ -123,6 +123,7 @@ shm(texts)
 
 # Exercise 8-10 Sending Messages
 
+
 def sm(t, st):
     """Simulate sending each message """
     while t:
@@ -137,6 +138,8 @@ def stm(st):
     for mt in st:
         print(mt)
 
+
+st = []
 texts = ['brb', 'ok', 'cu soon']
 sm(texts, st)
 print()
@@ -144,6 +147,7 @@ stm(st)
 
 # Exercise 8-11 Archived Messages
 
+
 def sm(t, st):
     """Simulate sending each message """
     while t:
@@ -157,6 +161,8 @@ def stm(st):
     print("The following text messages have been sent:")
     for mt in st:
         print(mt)
+
+
 st = []
 texts = ['brb', 'ok', 'cu soon']
 sm(texts[:], st)
@@ -168,18 +174,20 @@ print(st)
 
 # Exercise 8-12 Sandwiches
 
+
 def sand(*items):
     """Summarize sandwich order"""
-    print(f"\nMaking a sandwich with the following ingredients:")
+    print("\nMaking a sandwich with the following ingredients:")
     for i in items:
         print(f"-{i}")
-        
+
 
 sand('mayonaise', 'roast beef', 'lettuce', 'tomato')
 sand('mustard', 'corned beef', 'swiss cheese')
 sand('russian dressing', 'pastrami', 'ham', 'lettuce', 'pickles')
 
 # Exercise 8-13 User Profile
+
 
 def build_profile(first, last, **user_info):
     """Build a dictionary containing every thing we know about a user"""
@@ -193,4 +201,15 @@ user_profile = build_profile('raymond', 'rolison',
                              hometown='houston')
 print(user_profile)
 
+# Exercise 8-14 Cars
 
+
+def make_car(make, model, **feature):
+    """Build a dictionary with information about cars"""
+    feature['make'] = make
+    feature['model'] = model
+    return feature
+
+
+car = make_car('Ford', 'F-150', color='tan', engine='5.0L V8', year='2013')
+print(car)
