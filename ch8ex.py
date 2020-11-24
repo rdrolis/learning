@@ -204,12 +204,28 @@ print(user_profile)
 # Exercise 8-14 Cars
 
 
-def make_car(make, model, **feature):
+def make_car(model, make, **feature):
     """Build a dictionary with information about cars"""
-    feature['make'] = make
     feature['model'] = model
+    feature['make'] = make
     return feature
 
 
-car = make_car('Ford', 'F-150', color='tan', engine='5.0L V8', year='2013')
+car = make_car('f-150', 'ford', color='bronze', engine='5.0L V8', year='2013')
 print(car)
+print()
+# Print Car dictionary in a easily readable form
+
+
+def pr_car(car):
+    """ Print car in particular order"""
+    for k,v in reversed(car.items()):
+        if k == 'make':
+            print(f"{k.title()}: {v.title()}")
+        elif k == 'model':
+            print(f"{k.title()}: {v.title()}")
+        else:
+             print(f"{k.title()}: {v.title()}") 
+
+
+pr_car(car)
