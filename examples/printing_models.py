@@ -6,6 +6,8 @@ Created on Fri Oct 23 21:29:10 2020
 @author: rrolison
 """
 
+from printing_functions import *
+
 # Start with some designs that need to be printed.
 up = ['phone case', 'robot pendant', 'dodecahedron']
 co = []
@@ -24,24 +26,6 @@ for c in co:
 print()
 
 # Same routine using functions
-
-
-def pm(ud, cm):
-    """
-    Simulate printing each design, until none are left
-    Move each design to completed_models after printing.
-    """
-    while ud:
-        cd = ud.pop()
-        print(f"Printing model: {cd}")
-        cm.append(cd)
-
-
-def scm(cm):
-    """ Show all the models that were printed. """
-    print("The following models have been printed:")
-    for c in cm:
-        print(c)
 
 
 ud = ['phone case', 'robot pendant', 'dodecahedron', 'bushing']
