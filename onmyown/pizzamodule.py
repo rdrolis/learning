@@ -6,6 +6,12 @@ Created on Tue Nov 24 20:00:55 2020
 @author: rrolison
 """
 
+
+def start():
+    print("Welcome to Ray's Pizza Den. Please enter your order using our \
+automated system and we will be happy to serve you.")
+
+
 def mp(pizza, toppings):
     sauce = pizza[3]
     crust = pizza[2]

@@ -11,6 +11,7 @@ Created on Sun Oct 25 17:02:32 2020
 import time
 import sys
 from pizzamodule import mp
+from pizzamodule import start
 
 restart = True
 
@@ -20,8 +21,8 @@ def exit():
     sys.exit()
 
 
-print("Welcome to Ray's Pizza Den. Please enter your order using our \
-automated system and we will be happy to serve you.")
+start()
+
 cu = input("\nPlease give us your name for your order. \
 Type 'q' at anytime to quit: ")
 if cu == 'q':
@@ -29,6 +30,7 @@ if cu == 'q':
     sys.exit()
 else:
     print(f"\nThank you {cu.title()}. Please continue with your order: ")
+
 
 while restart:
     toppings = []
