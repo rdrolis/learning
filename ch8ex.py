@@ -107,7 +107,7 @@ while True:
         break
     album = make_album(tit, art)
     print(album)
-  
+
 # Exercise 8-9 Messages
 
 
@@ -174,13 +174,7 @@ print(st)
 
 # Exercise 8-12 Sandwiches
 
-
-def sand(*items):
-    """Summarize sandwich order"""
-    print("\nMaking a sandwich with the following ingredients:")
-    for i in items:
-        print(f"-{i}")
-
+from ch8mod import *
 
 sand('mayonaise', 'roast beef', 'lettuce', 'tomato')
 sand('mustard', 'corned beef', 'swiss cheese')
@@ -188,27 +182,17 @@ sand('russian dressing', 'pastrami', 'ham', 'lettuce', 'pickles')
 
 # Exercise 8-13 User Profile
 
-
-def build_profile(first, last, **user_info):
-    """Build a dictionary containing every thing we know about a user"""
-    user_info['first_name'] = first
-    user_info['last_name'] = last
-    return user_info
+import ch8mod as mn
 
 
-user_profile = build_profile('raymond', 'rolison',
-                             age='54', car='ford',
-                             hometown='houston')
+user_profile = mn.build_profile('raymond', 'rolison',
+                                age='54', car='ford',
+                                hometown='houston')
 print(user_profile)
 
 # Exercise 8-14 Cars
 
-
-def make_car(model, make, **feature):
-    """Build a dictionary with information about cars"""
-    feature['model'] = model
-    feature['make'] = make
-    return feature
+from ch8mod import make_car
 
 
 car = make_car('f-150', 'ford', color='bronze', engine='5.0L V8', year='2013')
@@ -216,16 +200,6 @@ print(car)
 print()
 # Print Car dictionary in a easily readable form
 
+from ch8mod import pr_car as prc
 
-def pr_car(car):
-    """ Print car in particular order"""
-    for k,v in reversed(car.items()):
-        if k == 'make':
-            print(f"{k.title()}: {v.title()}")
-        elif k == 'model':
-            print(f"{k.title()}: {v.title()}")
-        else:
-             print(f"{k.title()}: {v.title()}") 
-
-
-pr_car(car)
+prc(car)
