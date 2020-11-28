@@ -66,4 +66,5 @@ print()
 print(diamonds)
 print()
 print(spades)
-
+print()
+print(deck)
