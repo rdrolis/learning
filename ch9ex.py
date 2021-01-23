@@ -63,7 +63,7 @@ r4.desc()
 r4.open()
 
 # Exercise 9-3 Users
-# Exercise 9-5 Add methods for numbeer of login attempts.
+# Exercise 9-5 Add methods for number of login attempts.
 
 class User:
     """ Define user information"""

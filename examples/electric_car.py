@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 19 04:07:54 2021
+Created on Fri Jan 22 18:35:04 2021
 
 @author: rdrolis
 """
@@ -41,14 +41,13 @@ class Car:
         self.odometer_reading += miles
 
 
-my_new_car = Car('audi', 'a4', 2019)
-my_new_car.odometer_reading = 23
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
-my_new_car.update_odometer(21)
-new_car = Car('subaru', 'outback', 2015)
-print(new_car.get_descriptive_name())
-new_car.update_odometer(12000)
-new_car.read_odometer()
-new_car.increment_odometer(100)
-new_car.read_odometer()
+class ElectricCar(Car):
+    """Represent aspects of an electric car."""
+
+    def __init__(self, make, model, year):
+        """Initialize attributes of the parent class."""
+        super().__init__(make, model, year)
+
+
+tesla = ElectricCar('tesla', 'model s', 2019)
+print(tesla.get_descriptive_name())
