@@ -5,6 +5,7 @@ Created on Tue Jan 19 04:07:54 2021
 
 @author: rdrolis
 """
+"""A set of classes used to represent gas and electric cars."""
 
 
 class Car:
@@ -41,14 +42,33 @@ class Car:
         self.odometer_reading += miles
 
 
-my_new_car = Car('audi', 'a4', 2019)
-my_new_car.odometer_reading = 23
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
-my_new_car.update_odometer(21)
-new_car = Car('subaru', 'outback', 2015)
-print(new_car.get_descriptive_name())
-new_car.update_odometer(12000)
-new_car.read_odometer()
-new_car.increment_odometer(100)
-new_car.read_odometer()
+class Battery:
+    """Model a battery for an electric car"""
+
+    def __init__(self, battery_size=75):
+        """Initialize a battery's attributes"""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement about the battry's size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def get_range(self):
+        """Print a statement about the battery's range."""
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+        print(f"This car can go about {range} miles on a full charge.")
+
+
+class ElectricCar(Car):
+    """Represent aspects of an electric car."""
+
+    def __init__(self, make, model, year):
+        """
+        Initialize attributes of the parent class.
+        Then initialize attibutes specific to an electric car.
+        """
+        super().__init__(make, model, year)
+        self.battery = Battery()
