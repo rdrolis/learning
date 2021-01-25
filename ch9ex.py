@@ -9,6 +9,12 @@ Created on Wed Nov 25 09:37:57 2020
 # Exercise 9-1 Restaurant
 # Exercise 9-4 add methods for number of customers served
 
+"""
+Chapter exercises after 9-9 are in modules. See /ch9mod subdirectory
+for these exercises.
+"""
+
+
 class Restaurant:
     """Define a restaurant"""
 
