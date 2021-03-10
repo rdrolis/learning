@@ -24,7 +24,7 @@ while tr < 5:
      l = choice(string.ascii_uppercase)
      poss.append(l)
 
-# Exercise 9-14 Gernerate a winning ticket
+# Exercise 9-14 Generate a winning ticket
 print("\nFinding a winning ticket!!!")
 win=[]
 while len(win) < 4:
@@ -64,7 +64,7 @@ def check(play, winner):
 
 wins = get_win(poss)
 y = 0
-max = 1000
+max = 1000000
 won = False
 
 
