@@ -24,6 +24,7 @@ class Die:
 
 
 # Roll the die 10 times and print the results
+print("\nRolling the 6 sided die ten times.\nThe results are:")
 d6 = Die()
 
 results = []
@@ -33,7 +34,7 @@ for roll_num in range(10):
     results.append(result)
 
 print(results)
-
+print("\nRolling the 10 sided die ten times.\nThe results are:")
 d10 = Die(10)
 
 results = []
@@ -43,7 +44,7 @@ for roll_num in range(10):
     results.append(result)
 
 print(results)
-
+print("\nRolling the 20 sided die ten times.\nThe results are:")
 d20 = Die(20)
 
 results = []
