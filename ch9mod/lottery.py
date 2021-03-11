@@ -36,7 +36,7 @@ while len(win) < 4:
 print(f"The winning ticket is: {win}")
 
 # Exercise 9-15 Compare winning ticket to played ticket
-print(f"\nExercise 9-15:\n")
+print("\nExercise 9-15:\n")
 
 def get_win(poss):
     """Return a winning ticket from the set of possibilities"""
